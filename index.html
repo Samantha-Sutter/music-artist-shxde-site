@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shxde</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@100;500&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
+    />
+  </head>
+  <body>
+    <section class="headerindex">
+      <nav class="navbar">
+        <!--- i am working on fixing its responsiveness. I was trying a different way
+        and really really confused myself and ruined everything
+       I tried making a hamburger button-->
+        <!--<i class="fa fa-times" onclick="hideMenu()"></i> --->
+
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navLinks">
+          <ul>
+            <li>
+              <a href="https://open.spotify.com/artist/6rCnAlUYZj7i19NEeRlwCr"
+                ><img
+                  class="navimage"
+                  src="images/evenshrter.png"
+                  alt="shxde logo"
+              /></a>
+            </li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="listen.html">listen</a></li>
+            <li><a href="watch.html">watch</a></li>
+            <li><a href="press.html">press</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <!--- <i class="fa fa-bars"" onclick="showMenu()"></i> --->
+      </nav>
+      <div class="text-box">
+        <h1><em>shxde</em></h1>
+        <!----Hidden website, takes 10 seconds to make button appear -->
+        <a
+          href="https://www.youtube.com/watch?v=r9e9sriFyNk&list=LL&index=1"
+          class="hidden-btn"
+          >.wav</a
+        >
+      </div>
+    </section>
+
+    <!-------- about shxde section ---------->
+    <section class="about">
+      <h2><em>ARTIST | PRODUCER | DJ | CYBERPUNK</em></h2>
+      <p>
+        Founded in 2017 and hailing from Milwaukee Wisconsin, shxde’s distinct
+        sound and visual aesthetic has come to be synonymous with all things
+        cyberpunk. Taking heavy influence from Trance/Electronica/Trap and
+        Dubstep shxde has cultivated and helped pioneer the sub genre known as
+        ‘Hardwave.’
+      </p>
+      <p>
+        shxde not only pushes boundaries sonically, he also specializes in
+        Graphic Design and Artist Branding. With over 100 satisfied clients
+        shxde has personally crafted the visual identity of many talented
+        artists, designed and branded live events, URL shows and much more.
+      </p>
+      <p>
+        In 2021 shxde began the rollout of his anticipated experimental album
+        ‘x’ with three singles: Voices, Echo and Maze.
+      </p>
+      <p>
+        The full length album will be available to stream on all platforms
+        December 10th 2021.
+      </p>
+    </section>
+    <!---------------- video -------------------->
+    <div class="video">
+      <video controls muted autoplay loop src="videos/voices.mp4"></video>
+    </div>
+    <!----------------- pic of shxde and flip logo ------------->
+    <div class="circleimg">
+      <img
+        class="imgcircle"
+        src="images/circleshxde.png"
+        alt="shxde in glasses"
+      />
+      <img
+        class="imgcircle2"
+        src="images/shxdewif.jpeg"
+        alt="shxde wifi logo"
+      />
+    </div>
+
+    <!---- social meda links -------->
+    <footer>
+      <div class="socialmedia">
+        <ul>
+          <li>
+            <a
+              class="socials"
+              href="https://www.youtube.com/channel/UCNXEIKsTvdd8Fif2DPVwzag"
+              target="_blank"
+            >
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="socials"
+              href="https://www.facebook.com/shxdemusic/"
+              target="_blank"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="socials"
+              href="https://twitter.com/soundofshxde?lang=en"
+              target="_blank"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="socials"
+              href="https://www.instagram.com/shxde.wav/?hl=en"
+              target="_blank"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!------ script for social media icons i used ------>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
