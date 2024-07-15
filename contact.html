@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="shxde contact form" />
+    <meta name="keywords" content="shxde contact form" />
+    <title>shxde contact page</title>
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Rubik&family=Syne+Mono&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="contact-header">
+      <nav class="navbar">
+        <!--- i am working on fixing its responsiveness. I was trying a different way
+        and really really confused myself and ruined everything
+       I tried making a hamburger button-->
+        <!--<i class="fa fa-times" onclick="hideMenu()"></i> --->
+
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navLinks">
+          <ul>
+            <li>
+              <a href="https://open.spotify.com/artist/6rCnAlUYZj7i19NEeRlwCr"
+                ><img
+                  class="navimage"
+                  src="images/evenshrter.png"
+                  alt="shxde logo"
+              /></a>
+            </li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="listen.html">listen</a></li>
+            <li><a href="watch.html">watch</a></li>
+            <li><a href="press.html">press</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+
+      <div class="contactdiv">
+        <h1><em>contact shxde</em></h1>
+      </div>
+    </section>
+    <form
+      action="sendmail.php"
+      method="post"
+      name="contact_form"
+      id="contact_form"
+    >
+      <fieldset>
+        <legend>enter ur info</legend>
+        <label for="first_name">first name:</label>
+        <input type="text" name="first_name" id="first_name" required /><br />
+        <label for="last_name">last name:</label>
+        <input type="text" name="last_name" id="last_name" required /><br />
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" required /><br />
+        <label for="verify">verify:</label>
+        <input
+          type="email"
+          name="verify"
+          id="verify"
+          required
+          autocomplete="off"
+        /><br />
+        <label for="phone">phone number:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          placeholder="999-999-9999"
+          required
+        /><br />
+      </fieldset>
+      <fieldset>
+        <legend>send a msg</legend>
+        <br />
+        <label for="subject">what's this about? :</label>
+        <select name="subject" id="subject">
+          <option value="booking">booking</option>
+          <option value="graphic-design">graphic design</option>
+          <option value="colab">colab</option>
+          <option value="Other">other</option></select
+        ><br />
+        <label for="message">message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </fieldset>
+      <fieldset id="buttons">
+        <legend>submit ur msg</legend>
+        <label>&nbsp;</label>
+        <input type="submit" id="submit" value="send email" />
+        <input type="reset" id="reset" value="reset" /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>

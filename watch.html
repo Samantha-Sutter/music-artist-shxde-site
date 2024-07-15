@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shxde</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@100;500&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <!--- i am working on fixing its responsiveness. I was trying a different way
+        and really really confused myself and ruined everything
+       I tried making a hamburger button-->
+        <!--<i class="fa fa-times" onclick="hideMenu()"></i> --->
+
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navLinks">
+          <ul>
+            <li>
+              <a href="https://open.spotify.com/artist/6rCnAlUYZj7i19NEeRlwCr"
+                ><img
+                  class="navimage"
+                  src="images/evenshrter.png"
+                  alt="shxde logo"
+              /></a>
+            </li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="listen.html">listen</a></li>
+            <li><a href="watch.html">watch</a></li>
+            <li><a href="press.html">press</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <!--- <i class="fa fa-bars"" onclick="showMenu()"></i> --->
+      </nav>
+    </section>
+
+    <!-------- video gallery  ---------->
+    <div class="container">
+      <h1><em>WATCH</em></h1>
+      <div class="video-container">
+        <div class="video">
+          <video src="videos/maze.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+          <video src="videos/flexin.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+          <video src="videos/stilldreaming.mp4" muted></video>
+        </div>
+        <div class="video">
+          <video src="videos/letmedown.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+          <video src="videos/gloom.mp4" muted></video>
+        </div>
+        <div class="video">
+          <video src="videos/voices.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+          <video src="videos/higher.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+          <video src="videos/soul.mp4" muted></video>
+        </div>
+      </div>
+      <div class="popup-video">
+        <span>&times;</span>
+        <video src="videos/maze.mp4" controls autoplay muted></video>
+      </div>
+    </div>
+    <div class="circleimg">
+      <img class="imgcircle" src="images/blckwhte.jpeg" alt="shxde" />
+      <img
+        class="imgcircle2"
+        src="images/shxdewif.jpeg"
+        alt="shxde wifi logo"
+      />
+    </div>
+
+    <!---- social meda links -------->
+    <footer>
+      <div class="socialmedia">
+        <ul>
+          <li>
+            <a
+              class="socials"
+              href="https://www.youtube.com/channel/UCNXEIKsTvdd8Fif2DPVwzag"
+              target="_blank"
+            >
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="socials"
+              href="https://www.facebook.com/shxdemusic/"
+              target="_blank"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="socials"
+              href="https://twitter.com/soundofshxde?lang=en"
+              target="_blank"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              class="socials"
+              href="https://www.instagram.com/shxde.wav/?hl=en"
+              target="_blank"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!------ script for videos ----------->
+    <script>
+      document.querySelectorAll(".video-container video").forEach((vid) => {
+        vid.onclick = () => {
+          document.querySelector(".popup-video").style.display = "block";
+          document.querySelector(".popup-video video").src =
+            vid.getAttribute("src");
+        };
+      });
+      document.querySelector(".popup-video span").onclick = () => {
+        document.querySelector(".popup-video").style.display = "none";
+      };
+    </script>
+
+    <!------ script for social media icons i used ------>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
